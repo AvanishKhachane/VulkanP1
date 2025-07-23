@@ -47,10 +47,15 @@
 /Release
 /x64
 *.obj
+<<<<<<< HEAD
+=======
+*.exe
+>>>>>>> d8fd02fe7390577cada7e70878a6ea24d70ab0dd
 *.pdb
 *.ilk
 
 # Visual Studio files
+<<<<<<< HEAD
 .vscode/
 .vs/
 *.suo
@@ -59,3 +64,13 @@
 
 # Shader binaries
 *.spv
+=======
+.vs/
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+
+# Vulkan SDK cache
+.vulkan_sdk/
+>>>>>>> d8fd02fe7390577cada7e70878a6ea24d70ab0dd
