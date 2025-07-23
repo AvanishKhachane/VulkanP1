@@ -1,0 +1,163 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.43.34808.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/avanish/documents/vsc-files/cppfiles/vs_files/vulkan/vulkanp1/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "99458cee6cd20a0baefdd40b20a46046e98cc66c5770e20c3481ec7ecc07974c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/avanish/documents/vsc-files/cppfiles/vs_files/vulkan/vulkanp1/first_app.hpp"
+          },
+          "hashes": {
+            "sha-256": "024c7749c58491c1d3de15cc7f798658aae7e02f5c5b5fb2c63f759ba22bb404"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/avanish/documents/vsc-files/cppfiles/vs_files/vulkan/vulkanp1/vulkan_engine.h"
+          },
+          "hashes": {
+            "sha-256": "59d524b39022489006f1d8b1916f5890eeda6dcbc10521f56939aa6957404859"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/avanish/documents/vsc-files/cppfiles/vs_files/libs/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "aa370985f6b493bbe0358a36ab49f5780a6397c0209c6d98a62143dea595b73c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vulkan/vulkan.h"
+          },
+          "hashes": {
+            "sha-256": "be88e132e5419ef18c95ef4245ae663e46d300dd5713fd13bdc2c7b95c4acdb8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vulkan/vk_platform.h"
+          },
+          "hashes": {
+            "sha-256": "0203277669ea011533591278939c6af5d965cb65e7b05f98e462171e82f38ec3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vulkan/vulkan_core.h"
+          },
+          "hashes": {
+            "sha-256": "45faa66384cf2072f876eaf2c0d61b306878c4bb3b2b6acd8cda2d2b0f32599c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h264std.h"
+          },
+          "hashes": {
+            "sha-256": "93d504082380ce45d8aea5e8313fb1dc40630c7ab2584561864f452d0a192881"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codecs_common.h"
+          },
+          "hashes": {
+            "sha-256": "88f23fea24528a74bc0b71f62a2e765d40ef7b7ae37a59cff35bb042c980b4b6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h264std_encode.h"
+          },
+          "hashes": {
+            "sha-256": "b358694caa9f9686e0422ff6b0df71d8f52cb1a23ea03512f244d69626684525"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h265std.h"
+          },
+          "hashes": {
+            "sha-256": "dd0c3a84a028801d236f81025248377a9605ebf765ab963c27fa28f657a88548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h265std_encode.h"
+          },
+          "hashes": {
+            "sha-256": "2a2c9dea4010f96c71b6cadd89b96d4d9fc858149c4025e25549e1619b2fabab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h264std_decode.h"
+          },
+          "hashes": {
+            "sha-256": "a0678462f9ec0d9992aab6a816126c7abd98cd9bc4128c71a87d9e1fe7d5ff59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_h265std_decode.h"
+          },
+          "hashes": {
+            "sha-256": "9b579cf23b58986b41e1708d9b85f418fc498665605925264218fe85ddab61cf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_av1std.h"
+          },
+          "hashes": {
+            "sha-256": "74f1249ccf6fb660a38534c9ddb964562f9a1a991fc197e1f8d518d436e849cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_av1std_decode.h"
+          },
+          "hashes": {
+            "sha-256": "6c741f73c24d3ca66fbc19104e6b535619a2b01730f9c7fa1ac935d2e7e332f8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.4.304.1/include/vk_video/vulkan_video_codec_av1std_encode.h"
+          },
+          "hashes": {
+            "sha-256": "c1ff3ee503f2986f3b68606cb148665e5123f559d409fc04bd83f37433e61867"
+          }
+        }
+      ]
+    }
+  ]
+}
