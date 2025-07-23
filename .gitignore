@@ -39,3 +39,23 @@
 
 # debug information files
 *.dwo
+
+# Build artifacts
+/build
+/bin
+/Debug
+/Release
+/x64
+*.obj
+*.pdb
+*.ilk
+
+# Visual Studio files
+.vscode/
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+
+# Shader binaries
+*.spv
