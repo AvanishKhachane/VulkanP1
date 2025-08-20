@@ -7,7 +7,7 @@
 
 namespace ve
 {
-	vePipeline::vePipeline(EngineDevice& device, const std::string vertFilePath, const std::string fragFilePath, const pipelineConfigInfo& ConfigInfo)
+	vePipeline::vePipeline(EngineDevice &device, const std::string vertFilePath, const std::string fragFilePath, const pipelineConfigInfo &ConfigInfo)
 		: device(device)
 	{
 		createShaderModule(readFile(vertFilePath), &vertShaderModule);
@@ -27,7 +27,7 @@ namespace ve
 		vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline);
 	}
 
-	std::vector<char> vePipeline::readFile(const std::string& filepath)
+	std::vector<char> vePipeline::readFile(const std::string &filepath)
 	{
 		std::ifstream file(filepath, std::ios::ate | std::ios::binary);
 
@@ -46,7 +46,7 @@ namespace ve
 		return buffer;
 	}
 
-	void vePipeline::createPipeline(const std::string& vertFilePath, const std::string& fragFilePath, const pipelineConfigInfo& ConfigInfo)
+	void vePipeline::createPipeline(const std::string &vertFilePath, const std::string &fragFilePath, const pipelineConfigInfo &ConfigInfo)
 	{
 		assert(ConfigInfo.pipelineLayout != VK_NULL_HANDLE && "Cannot create pipeline before pipeline layout");
 		assert(ConfigInfo.renderPass != VK_NULL_HANDLE && "Cannot create pipeline before render pass");
@@ -109,14 +109,15 @@ namespace ve
 		}
 	}
 
-	void vePipeline::createShaderModule(const std::vector<char>& code, VkShaderModule* shaderModule)
+	void vePipeline::createShaderModule(const std::vector<char> &code, VkShaderModule *shaderModule)
 	{
 		VkShaderModuleCreateInfo createInfo{};
 		createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
 		createInfo.codeSize = code.size();
-		createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
+		createInfo.pCode = reinterpret_cast<const uint32_t *>(code.data());
 
-		if (vkCreateShaderModule(device.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS) {
+		if (vkCreateShaderModule(device.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS)
+		{
 			throw std::runtime_error("failed to create shader module!");
 		}
 	}
@@ -136,8 +137,8 @@ namespace ve
 		configInfo.viewport.minDepth = 0.0f;
 		configInfo.viewport.maxDepth = 1.0f;
 
-		configInfo.scissor.offset = { 0, 0 };
-		configInfo.scissor.extent = { width, height };
+		configInfo.scissor.offset = {0, 0};
+		configInfo.scissor.extent = {width, height};
 
 		configInfo.rasterizationInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO;
 		configInfo.rasterizationInfo.depthClampEnable = VK_FALSE;
@@ -147,9 +148,9 @@ namespace ve
 		configInfo.rasterizationInfo.cullMode = VK_CULL_MODE_NONE;
 		configInfo.rasterizationInfo.frontFace = VK_FRONT_FACE_CLOCKWISE;
 		configInfo.rasterizationInfo.depthBiasEnable = VK_FALSE;
-		configInfo.rasterizationInfo.depthBiasConstantFactor = 0.0f;  // Optional
-		configInfo.rasterizationInfo.depthBiasClamp = 0.0f;           // Optional
-		configInfo.rasterizationInfo.depthBiasSlopeFactor = 0.0f;     // Optional
+		configInfo.rasterizationInfo.depthBiasConstantFactor = 0.0f; // Optional
+		configInfo.rasterizationInfo.depthBiasClamp = 0.0f;			 // Optional
+		configInfo.rasterizationInfo.depthBiasSlopeFactor = 0.0f;	 // Optional
 
 		// Add missing multisample and color blend state initialization
 		configInfo.multisampleInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO;

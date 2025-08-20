@@ -1,10 +1,2 @@
-﻿  first_app.cpp
-  engine_device.cpp
-  main.cpp
-  veModel.cpp
-  vePipeline.cpp
-  veSwapchain.cpp
-  veWindow.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  vulkanP1.vcxproj -> C:\Users\Public\Documents\VSC-files\cppfiles\VS_files\vulkan\vulkanP1\x64\Debug\vulkanP1.exe
+﻿LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  vulkanP1.vcxproj -> C:\Users\Public\Documents\VS_files\vulkan\vulkanP1\x64\Debug\vulkanP1.exe
