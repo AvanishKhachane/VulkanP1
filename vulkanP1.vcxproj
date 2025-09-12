@@ -156,26 +156,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="proj\first_app.cpp" />
-    <ClCompile Include="proj\engine_device.cpp" />
-    <ClCompile Include="proj\main.cpp" />
-    <ClCompile Include="proj\veModel.cpp" />
-    <ClCompile Include="proj\vePipeline.cpp" />
-    <ClCompile Include="proj\veSwapchain.cpp" />
-    <ClCompile Include="proj\veWindow.cpp" />
+    <ClCompile Include="project\first_app.cpp" />
+    <ClCompile Include="project\engine_device.cpp" />
+    <ClCompile Include="project\main.cpp" />
+    <ClCompile Include="project\veModel.cpp" />
+    <ClCompile Include="project\vePipeline.cpp" />
+    <ClCompile Include="project\veSwapchain.cpp" />
+    <ClCompile Include="project\veWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proj\first_app.hpp" />
-    <ClInclude Include="proj\engine_device.hpp" />
-    <ClInclude Include="proj\veModel.hpp" />
-    <ClInclude Include="proj\vePipeline.hpp" />
-    <ClInclude Include="proj\veWindow.hpp" />
-    <ClInclude Include="proj\veSwapchain.hpp" />
+    <ClInclude Include="project\first_app.hpp" />
+    <ClInclude Include="project\engine_device.hpp" />
+    <ClInclude Include="project\veModel.hpp" />
+    <ClInclude Include="project\vePipeline.hpp" />
+    <ClInclude Include="project\veWindow.hpp" />
+    <ClInclude Include="project\veSwapchain.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="gitpush.ps1" />
-    <None Include="proj\compile.bat" />
-    <None Include="proj\shaders\FragmentShader1.frag">
+    <None Include="project\compile.bat" />
+    <None Include="project\shaders\FragmentShader1.frag">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\FragmentShader1.frag -o shaders/FragmentShader1.frag.spv</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">shaders/FragmentShader1.frag.spv</Outputs>
@@ -186,19 +186,19 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\FragmentShader1.frag -o shaders/FragmentShader1.frag.spv</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shaders/FragmentShader1.frag.spv</Outputs>
     </None>
-    <None Include="proj\shaders\FragmentShader1.frag.spv" />
-    <None Include="proj\shaders\VertexShader1.vert">
+    <None Include="project\shaders\FragmentShader1.frag.spv" />
+    <None Include="project\shaders\VertexShader1.vert">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.frag -o shaders/VertexShader1.frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">shaders/VertexShader1.frag.spv;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.frag -o shaders/VertexShader1.frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">shaders/VertexShader1.frag.spv;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.frag -o shaders/VertexShader1.frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shaders/VertexShader1.frag.spv;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.frag -o shaders/VertexShader1.frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shaders/VertexShader1.frag.spv;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.vert -o shaders/VertexShader1.vert.spv</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">shaders/VertexShader1.vert.spv;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.vert -o shaders/VertexShader1.vert.spv</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">shaders/VertexShader1.vert.spv;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.vert -o shaders/VertexShader1.vert.spv</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shaders/VertexShader1.vert.spv;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(VULKAN_SDK)\Bin\glslc.exe" -V shaders\VertexShader1.vert -o shaders/VertexShader1.vert.spv</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shaders/VertexShader1.vert.spv;%(Outputs)</Outputs>
     </None>
-    <None Include="proj\shaders\VertexShader1.vert.spv" />
+    <None Include="project\shaders\VertexShader1.vert.spv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

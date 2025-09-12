@@ -15,56 +15,56 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="proj\first_app.cpp">
+    <ClCompile Include="project\first_app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proj\veWindow.cpp">
+    <ClCompile Include="project\veWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="proj\vePipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proj\engine_device.cpp">
+    <ClCompile Include="project\engine_device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proj\main.cpp">
+    <ClCompile Include="project\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proj\veSwapchain.cpp">
+    <ClCompile Include="project\veSwapchain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proj\veModel.cpp">
+    <ClCompile Include="project\veModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proj\first_app.hpp">
+    <ClInclude Include="project\first_app.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proj\veWindow.hpp">
+    <ClInclude Include="project\veWindow.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proj\vePipeline.hpp">
+    <ClInclude Include="project\vePipeline.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proj\engine_device.hpp">
+    <ClInclude Include="project\engine_device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proj\veSwapchain.hpp">
+    <ClInclude Include="project\veSwapchain.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proj\veModel.hpp">
+    <ClInclude Include="project\veModel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="proj\compile.bat">
+    <None Include="project\compile.bat">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="proj\shaders\FragmentShader1.frag.spv" />
-    <None Include="proj\shaders\VertexShader1.vert.spv" />
-    <None Include="proj\shaders\FragmentShader1.frag" />
-    <None Include="proj\shaders\VertexShader1.vert" />
+    <None Include="project\shaders\FragmentShader1.frag.spv" />
+    <None Include="project\shaders\VertexShader1.vert.spv" />
+    <None Include="project\shaders\FragmentShader1.frag" />
+    <None Include="project\shaders\VertexShader1.vert" />
     <None Include="gitpush.ps1" />
   </ItemGroup>
 </Project>
