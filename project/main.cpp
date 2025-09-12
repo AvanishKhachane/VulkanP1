@@ -7,7 +7,7 @@
 int main()
 {
 
-    system("compile.bat");
+    system("project\\compile.bat");
 
     ve::firstapp app;
 
