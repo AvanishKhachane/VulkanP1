@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Docs\VulkanP1\x64\Debug\vulkanP1.exe</FullPath>
+      <FullPath>D:\Docs\vscproj\projects\VulkanP1\x64\Debug\vulkanP1.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

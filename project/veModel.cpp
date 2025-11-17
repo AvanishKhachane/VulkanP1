@@ -28,4 +28,35 @@ namespace ve
 		memcpy(data, vertices.data(), static_cast<size_t>(bufferSize));
 		vkUnmapMemory(engdev.device(), vertexBufferMemory);
 	}
+
+	void veModel::bind(VkCommandBuffer commandBuffer)
+	{
+		VkBuffer buffers[] = {vertexBuffer};
+		VkDeviceSize offsets[] = {0};
+		vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
+	}
+
+	void veModel::draw(VkCommandBuffer commandBuffer)
+	{
+		vkCmdDraw(commandBuffer, vertexCount, 1, 0, 0);
+	}
+
+	std::vector<VkVertexInputBindingDescription> veModel::Vertex::getBindingDescription()
+	{
+		std::vector<VkVertexInputBindingDescription> bindingDescriptions(1);
+		bindingDescriptions[0].binding = 0;
+		bindingDescriptions[0].stride = sizeof(Vertex);
+		bindingDescriptions[0].inputRate = VK_VERTEX_INPUT_RATE_VERTEX;
+		return bindingDescriptions;
+	}
+
+	std::vector<VkVertexInputAttributeDescription> veModel::Vertex::getAttributeDescription()
+	{
+		std::vector<VkVertexInputAttributeDescription> attributeDescriptions(1);
+		attributeDescriptions[0].binding = 0;
+		attributeDescriptions[0].location = 0;
+		attributeDescriptions[0].format = VK_FORMAT_R32G32_SFLOAT;
+		attributeDescriptions[0].offset = offsetof(Vertex, position);
+		return attributeDescriptions;
+	}
 }

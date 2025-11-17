@@ -1,7 +1,7 @@
-D:\Docs\VulkanP1\project\first_app.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\first_app.obj
-D:\Docs\VulkanP1\project\engine_device.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\engine_device.obj
-D:\Docs\VulkanP1\project\main.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\main.obj
-D:\Docs\VulkanP1\project\veModel.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\veModel.obj
-D:\Docs\VulkanP1\project\vePipeline.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\vePipeline.obj
-D:\Docs\VulkanP1\project\veSwapchain.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\veSwapchain.obj
-D:\Docs\VulkanP1\project\veWindow.cpp;D:\Docs\VulkanP1\vulkanP1\x64\Debug\veWindow.obj
+D:\Docs\vscproj\projects\VulkanP1\project\first_app.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\first_app.obj
+D:\Docs\vscproj\projects\VulkanP1\project\engine_device.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\engine_device.obj
+D:\Docs\vscproj\projects\VulkanP1\project\main.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\main.obj
+D:\Docs\vscproj\projects\VulkanP1\project\veModel.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\veModel.obj
+D:\Docs\vscproj\projects\VulkanP1\project\vePipeline.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\vePipeline.obj
+D:\Docs\vscproj\projects\VulkanP1\project\veSwapchain.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\veSwapchain.obj
+D:\Docs\vscproj\projects\VulkanP1\project\veWindow.cpp;D:\Docs\vscproj\projects\VulkanP1\vulkanP1\x64\Debug\veWindow.obj

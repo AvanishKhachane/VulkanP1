@@ -7,6 +7,7 @@ namespace ve
 {
 	firstapp::firstapp()
 	{
+		loadModel();
 		createPipelineLayout();
 		createPipeline();
 		createCommandBuffer();
@@ -89,7 +90,7 @@ namespace ve
 
 			vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 			vePl->bind(commandBuffers[i]);
-			vkCmdDraw(commandBuffers[i], 3, 1, 0, 0);
+			veMod->bind(commandBuffers[i]);
 			vkCmdEndRenderPass(commandBuffers[i]);
 			if (vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS)
 			{
@@ -115,5 +116,15 @@ namespace ve
 		{
 			throw std::runtime_error("failed to present swap chain image!");
 		}
+	}
+
+	void firstapp::loadModel()
+	{
+		std::vector<veModel::Vertex> vertices = {
+			{{0.0f, -0.5f}},
+			{{0.5f, 0.5f}},
+			{{-0.5f, 0.5f}}};
+
+		veMod = std::make_unique<veModel>(engdev, vertices);
 	}
 }
