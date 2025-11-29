@@ -12,8 +12,8 @@
 
 namespace ve
 {
-	const string vertshader1 = R"(C:\Users\Public\Documents\VS_files\vulkan\vulkanP1\proj\shaders\VertexShader1.vert.spv)";
-	const string fragshader1 = R"(C:\Users\Public\Documents\VS_files\vulkan\vulkanP1\proj\shaders\FragmentShader1.frag.spv)";
+	const string vertshader1 = R"(D:\Docs\vscproj\projects\VulkanP1\project\output\VertexShader1.vert.spv)";
+	const string fragshader1 = R"(D:\Docs\vscproj\projects\VulkanP1\project\output\FragmentShader1.frag.spv)";
 
 	class firstapp
 	{

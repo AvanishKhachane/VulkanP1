@@ -72,6 +72,7 @@ namespace ve
 
 		auto bindingDescriptions = veModel::Vertex::getBindingDescription();
 		auto attributeDescriptions = veModel::Vertex::getAttributeDescription();
+
 		VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
 		vertexInputInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
 		vertexInputInfo.vertexAttributeDescriptionCount = static_cast<uint32_t>(attributeDescriptions.size());

@@ -91,6 +91,7 @@ namespace ve
 			vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 			vePl->bind(commandBuffers[i]);
 			veMod->bind(commandBuffers[i]);
+			veMod->draw(commandBuffers[i]);
 			vkCmdEndRenderPass(commandBuffers[i]);
 			if (vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS)
 			{
@@ -121,9 +122,9 @@ namespace ve
 	void firstapp::loadModel()
 	{
 		std::vector<veModel::Vertex> vertices = {
-			{{0.0f, -0.5f}},
-			{{0.5f, 0.5f}},
-			{{-0.5f, 0.5f}}};
+			{{0.0f, -0.4f}, {1.0f, 0.0f, 0.0f}},
+			{{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
+			{{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}};
 
 		veMod = std::make_unique<veModel>(engdev, vertices);
 	}

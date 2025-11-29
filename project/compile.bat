@@ -1,2 +1,2 @@
-D:\VulkanSDK\1.4.321.1\Bin\glslc.exe project\shaders\VertexShader1.vert -o project\shaders\VertexShader1.vert.spv
-D:\VulkanSDK\1.4.321.1\Bin\glslc.exe project\shaders\FragmentShader1.frag -o project\shaders\FragmentShader1.frag.spv
+D:\VulkanSDK\1.4.328.1\Bin\glslc.exe project\shaders\VertexShader1.vert -o project\output\VertexShader1.vert.spv
+D:\VulkanSDK\1.4.328.1\Bin\glslc.exe project\shaders\FragmentShader1.frag -o project\output\FragmentShader1.frag.spv
